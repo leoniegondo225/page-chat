@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onichat</title>
+    <link rel="shortcut icon" href="./images/icon.png"  type="image/x-icon">
+    <link rel="stylesheet" href="./vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.css">
+</head>
+<body>
+    
+<section class="container mb-5">
+    <h2 class="fw-bold mb-4">Message avec leo</h2>
+
+    <div class="messages" id="messageContainer">
+        <!-- Message envoyé par l'utilisateur -->
+        <div class="d-flex align-items-center justify-content-end mb-3">
+            <div class="p-3 bg-warning text-light rounded-3">
+                Salut leo! Comment vas-tu?
+            </div>
+            <img src="./images/profil1.webp" class="rounded-circle ms-3" width="40" alt="Avatar de l'utilisateur">
+        </div>
+
+        <!-- Message reçu -->
+        <div class="d-flex align-items-center mb-3">
+            <img src="./images/img2.webp" class="rounded-circle me-3" width="40" alt="Avatar leo">
+            <div class="p-3 bg-light rounded-3">
+                Je vais bien, merci ! Et toi ?
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--la saisie de message -->
+<section class="container mb-5">
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Écrire un message..." id="messageInput" aria-label="Écrire un message">
+        <button class="btn btn-warning text-light" type="button" id="sendMessageButton"><i class="fa fa-paper-plane"></i></button>
+    </div>
+</section> 
+    
+
+
+<script src="./vendors/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>

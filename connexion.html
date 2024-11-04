@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de connexion</title>
+
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <section class="connexion py-5">
+        <div class="container">
+            <div class="card shadow border-0 p-3">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <img src="./images/1.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bold mb-3">Se connecter</h2>
+                            <form id="loginSubmit" class="row mb-3">
+                                <div class="col-lg-12">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                        <label for="floatingInput">Email address</label>
+                                      </div>
+                                </div>
+                                <div class="col-lg-12 mb-3">
+                                    <div class="input-group form-floating mb-3">
+                                        <input type="text" class="form-control" id="password" placeholder="Mot de passe">
+                                        <span class="input-group-text bg-transparent border-l-0">
+                                            <a href="#a" id="viewPassword" class="text-decoration-none text-secondary"><i class="fa fa-eye"></i></a>
+                                        </span>
+                                        <label for="password">Mot de passe</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <p class="bg-danger rounded-2 p-2 text-white fw-bold" style="display: none;" id="message"></p>
+                                    <button type="submit" id="btnSubmit" class="btn btn-warning">Se connecter</button>
+                                </div>
+                            </form>
+                            <p>Nouveau ? <a href="/inscription.html" class="text-decoration-none">Créee un compte</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./vendors/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
